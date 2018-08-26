@@ -1,0 +1,132 @@
+
+
+/*  color */
+
+/* //#02866F */
+
+body,
+html {
+  margin: 0 auto;
+  /* background-color: rgb(225, 230, 227); */
+  /* background-attachment: fixed;  */
+}
+
+#nav {
+  padding: 20px;
+}
+
+.portfolio {
+  text-align: center;
+  font-weight: 500;
+  padding-top: 5%;
+  font-size: 60px;
+  font-family: Verdana;
+}
+
+.nav-link {
+  color: rgba(144, 45, 79, 0.9);
+  margin: 0 auto;
+}
+
+#background-image {
+  background: url('/imgs/portfolio.jpg') no-repeat center center fixed;
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#about {
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 0;
+}
+
+.jumbotron {
+  background-color: rgb(231, 236, 233);
+  margin-bottom: 0;
+}
+
+.intro {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin-top: 9px;
+  line-height: 2em;
+}
+
+#background-image-2 {
+  background-image: url('/imgs/secondbg.jpg');
+  height: 90%;
+  width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  overflow: hidden;
+}
+
+#skills {
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  padding-top: 1%;
+  padding-bottom: 0;
+}
+
+#pskill {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.988);
+  font-size: 30px;
+}
+
+.progress-bar {
+  color: red;
+}
+
+.about-container {
+  background-color: #f7f7f7;
+  box-shadow: 4px 4px 4px #808e80;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.progress {
+  margin: 10px;
+}
+
+.skills-logos {
+  width: 30%;
+}
+
+.project {
+  text-align: center;
+  padding: 20px;
+}
+
+.project-h3 {
+  padding: 15px;
+}
+
+.full-width {
+  width: 100%;
+  box-shadow: 1px 3px 2px grey;
+}
+
+.form-background {
+  background-color: #808e80;
+}
+
+.to-do {
+  margin-bottom: 30px;
+}
+
+.to-do-lists {
+  margin: 20px;
+}
+
+#contact {
+  padding: 25px;
+}
+
+.links {
+  font-size: 40px;
+}
