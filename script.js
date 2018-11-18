@@ -1,9 +1,17 @@
-$(document).ready(function () {
+const backgroundImg = document.getElementById("background-image")
+const backgroundArray = ['imgs/background-image.png', 'imgs/img1.jpg', 'imgs/img2.jpg', 'imgs/img3.jpg',  'imgs/portfolio.jpg'];
 
-   let scrollLink = $('.scroll');
+i = 0;
+
+setInterval(() => {
+  backgroundImg.style.backgroundImage = `url(${backgroundArray[++i % 5]})`
+}, 3000)
+
+$(document).ready(function(){
+  let scrollLink = $('.scroll');
 
   // Smooth scrolling
-  scrollLink.click(function (e) {
+  scrollLink.click(function(e){
     e.preventDefault();
     $('body,html').animate({
       scrollTop: $(this.hash).offset().top
@@ -11,14 +19,13 @@ $(document).ready(function () {
   });
 
   // Active link switching
-  $(window).scroll(function () {
-    let  scrollbarLocation = $(this).scrollTop();
+  $(window).scroll(function(){
+    let scrollbarLocation = $(this).scrollTop();
 
-    scrollLink.each(function () {
+    scrollLink.each(function(){
+        let sectionOffset = $(this.hash).offset().top - 5;
 
-      let  sectionOffset = $(this.hash).offset().top - 10;
-
-      if (sectionOffset <= scrollbarLocation) {
+    if (sectionOffset <= scrollbarLocation) {
         $(this).parent().addClass('active');
         $(this).parent().siblings().removeClass('active');
       }
@@ -28,7 +35,7 @@ $(document).ready(function () {
 
 })
 
-$("#mailSend").click(function () {
+$("form#contact-form").on("submit", function () {
   let subject = $('#mailSubject').val();
   let message = $('#mailMessage').val()
   window.open("mailto:karmadrukpa11@gmail.com?subject=" + subject + "&body=" + message);

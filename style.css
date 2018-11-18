@@ -1,15 +1,13 @@
-
-
 /*  color */
-
 /* //#02866F */
-
-body,
+ body,
 html {
-  margin: 0 auto;
+  margin: 0 auto; 
   /* background-color: rgb(225, 230, 227); */
   /* background-attachment: fixed;  */
-}
+ } 
+
+ 
 
 #nav {
   padding: 20px;
@@ -18,9 +16,10 @@ html {
 .portfolio {
   text-align: center;
   font-weight: 500;
-  padding-top: 5%;
+  padding-top: 10%;
   font-size: 60px;
   font-family: Verdana;
+  color: #f7f7f7;
 }
 
 .nav-link {
@@ -29,11 +28,19 @@ html {
 }
 
 #background-image {
-  background: url('/imgs/portfolio.jpg') no-repeat center center fixed;
+  background-image: url('/imgs/portfolio.jpg');
   height: 100vh;
-  width: 100vw;
+  width: auto;
+  background-position: center;
+  background-attachment: fixed; 
+  background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  transition:  all 3s ease-in-out;
+ /* background: url('/imgs/portfolio.jpg') no-repeat center center fixed;
+   webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; */ 
 }
 
 #about {
@@ -56,12 +63,11 @@ html {
 
 #background-image-2 {
   background-image: url('/imgs/secondbg.jpg');
-  height: 90%;
-  width: 100%;
-  background-size: cover;
-  background-attachment: fixed;
+  height: auto;
   background-position: center;
-  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-attachment: fixed;  */
 }
 
 #skills {
@@ -84,7 +90,8 @@ html {
 
 .about-container {
   background-color: #f7f7f7;
-  box-shadow: 4px 4px 4px #808e80;
+  -webkit-box-shadow: 4px 4px 4px #808e80;
+          box-shadow: 4px 4px 4px #808e80;
   border-radius: 10px;
   padding: 30px;
 }
@@ -108,7 +115,8 @@ html {
 
 .full-width {
   width: 100%;
-  box-shadow: 1px 3px 2px grey;
+  -webkit-box-shadow: 1px 3px 2px grey;
+          box-shadow: 1px 3px 2px grey;
 }
 
 .form-background {
@@ -130,3 +138,20 @@ html {
 .links {
   font-size: 40px;
 }
+
+#portfolioh1{
+  padding-top: 8%;
+}
+
+/* MEDIA QUERIES FOR PHONE SCREEN */
+/* @media only screen and (max-width: 600px) {
+  #background-image, #background-image-2{
+    width: 100%;
+  }
+} */
+
+/* @media (max-width: 576px) {
+  #background-image {
+      background-position: 25% 25%;
+  }
+} */
